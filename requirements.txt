@@ -1,0 +1,4 @@
+discord.py
+asyncio
+numpy
+discord-py-slash-command
