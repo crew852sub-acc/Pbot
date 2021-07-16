@@ -42,7 +42,7 @@ async def clear(ctx, lines : int):
 
 @slash.slash(name="주사위", description='입력받은 눈 수만큼의 주사위를 굴려줍니다.', guild_ids=guild_ids)
 async def dice(ctx, number : int):
-    embed=discord.Embed(title=':rias_hook: 주사위를 굴려서 나온 숫자는...', description=f'[{random.randint(1,int(number))}]  이(가) 나왔습니다.', color=0xffae00)
+    embed=discord.Embed(title=':game_die: 주사위를 굴려서 나온 숫자는...', description=f'[{random.randint(1,int(number))}]  이(가) 나왔습니다.', color=0xffae00)
     await ctx.send(embed=embed)
 
 @slash.slash(name="철권랜덤", description='랜덤으로 아무 캐릭터나 뽑아줍니다.(철권)', guild_ids=guild_ids)
