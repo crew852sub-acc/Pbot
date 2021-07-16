@@ -53,7 +53,7 @@ async def r(ctx):
 
 @slash.slash(name="슈퍼채팅", description="크게 말해봐", guild_ids=guild_ids)
 async def sc(ctx, chat):
-    embed = discord.Embed(title=":speech_balloon:" + chat, description="(이)라고 하네요.", color=0xffae00)
+    embed = discord.Embed(title=":speech_balloon: " + chat, color=0xffae00)
     await ctx.send(embed=embed)
 
 
