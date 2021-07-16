@@ -51,5 +51,10 @@ async def r(ctx):
     embed = discord.Embed(title=":game_die: 캐릭터 랜덤 선택 결과...", description=f'[{choicechar}] (이)가 나왔습니다.', color=0xb377ee)
     await ctx.send(embed=embed)
 
+@slash.slash(name="슈퍼채팅", description="크게 말해봐", guild_ids=guild_ids)
+async def sc(ctx, chat):
+    embed = discord.Embed(title=":speech_balloon:" + chat, description="(이)라고 하네요.", color=0xffae00)
+    await ctx.send(embed=embed)
+
 
 bot.run(os.environ['token'])
