@@ -8,6 +8,10 @@ import random
 
 import bot_func as bf
 
+# 게임 module
+import GameBase as gameBase
+import Gomoku as gomoku
+
 bot = discord.Client(intents=discord.Intents.all())
 slash = SlashCommand(bot, sync_commands=True)
 guild_ids = bot.guilds
